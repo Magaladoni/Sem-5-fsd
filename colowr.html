@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Circle Color Changer</title>
+    <style>
+        #circle {
+            width: 150px;
+            height: 150px;
+            background-color: gray;
+            border-radius: 50%;
+            margin: 30px auto;
+            display: block;
+            transition: background-color 0.3s;
+        }
+        .btn-group {
+            text-align: center;
+        }
+        button {
+            margin: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="circle"></div>
+    <div class="btn-group">
+        <button onclick="changeColor('red')">Red</button>
+        <button onclick="changeColor('blue')">Blue</button>
+        <button onclick="changeColor('green')">Green</button>
+        <button onclick="changeColor('yellow')">Yellow</button>
+    </div>
+    <script>
+        function changeColor(color) {
+            document.getElementById('circle').style.backgroundColor = color;
+        }
+    </script>
+</body>
+</html>
